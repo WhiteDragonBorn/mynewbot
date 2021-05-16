@@ -1,2 +1,2 @@
 # mynewbot
-Discord.py bot 
+__Discord.py bot__
