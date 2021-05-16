@@ -22,6 +22,9 @@ class MyClient(discord.Client):
         if message.content == 'саня':
             await message.channel.send('саня')
 
+        if message.content == 'пидор':
+            await message.channel.send('сам такой!')
+
 
 client = MyClient()
-client.run('ODQzNTM1NDQxNTM4MTg3MzE1.YKFRmQ.IgN5kf_MI6Gi8YbUBfwoO9gJbi0')
+client.run('')
