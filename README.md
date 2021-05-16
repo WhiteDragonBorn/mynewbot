@@ -1,0 +1,2 @@
+# mynewbot
+Discord.py bot 
