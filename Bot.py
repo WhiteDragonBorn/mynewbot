@@ -44,7 +44,7 @@ async def on_ready():
 async def latency(ctx): # простая комманда, чтобы узнать задержку бота (в развитии видимо)
     await ctx.channel.send(f"Bots latency is around {round(client.latency * 1000)}ms")
 
-@client.command(aliases=["8ball"])
+@client.command(aliases=["8ball"]) # aliases добавляет команды, с помощью которых можно вызвать бота 
 async def _8ball(ctx, *, question): # рандомный ответ из 2-х (пока что) на любой вопрос
     responses = ["NO FUCK YOU",
                  "CMON LETS GO"]
@@ -60,4 +60,4 @@ async def clear(ctx, amount=3): # стираем сообщения в чате,
     await ctx.channel.purge(limit=(amount + 1)) # +1 нужен. чтобы он ваш вызов .clear также стёр
 
 # client = MyClient()
-client.run('ODQzNTM1NDQxNTM4MTg3MzE1.YKFRmQ.8_dLFJTHG5_wKU4gVUSoV2r4-B4')
+client.run('')
