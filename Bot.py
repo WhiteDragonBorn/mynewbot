@@ -19,7 +19,7 @@ class MyClient(discord.Client):
         # don't respond to ourselves
         if message.author == self.user:
             return
-        if message.content == 'саня':
+        if message.content == 'Павло':
             await message.channel.send('саня')
 
         if message.content == 'пидор':
