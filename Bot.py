@@ -5,13 +5,9 @@ from discord.ext.commands import bot
 client = commands.Bot(command_prefix='.')
 
 
-@client.event
-async def on_ready():
-    print('Bot is ready')
-
-@client.command()
-async def pog(ctx):
-    await ctx.send('FUCK YOU')
+# @client.event
+# async def on_ready():
+#     print('Bot is ready')
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -28,6 +24,9 @@ class MyClient(discord.Client):
         if message.content == 'пидор':
             await message.channel.send('сам такой!')
 
+    async def pog(ctx):
+        await ctx.channel.send('FUCK YOU')
+
 
 client = MyClient()
-client.run('')
+client.run('ODQzNTM1NDQxNTM4MTg3MzE1.YKFRmQ.-ikU0mRiOocaSq6Qy25QmnXdvDA')
